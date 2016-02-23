@@ -78,7 +78,7 @@ public:
         genesis.nVersion = 1;
         genesis.nTime    = 1456151369;
         genesis.nBits    = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce   = 0;
+        genesis.nNonce   = 68013;
 // uncomment to log genesis block info        
       //  start
         if (true && genesis.GetHash() != hashGenesisBlock)
@@ -113,8 +113,8 @@ public:
 
         //end
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x"));
-        assert(genesis.hashMerkleRoot == uint256("0x"));
+        assert(hashGenesisBlock == uint256("0x0000090d15dc573b455c80e83beabde6fd30fda5ed17ba3f9522245dafea3e5b"));
+        assert(genesis.hashMerkleRoot == uint256("0xa3ae3d1d12283bcc0922628b4ca0f0434afba2b96789b8f7908a206d6bc6acd1"));
 
         vSeeds.push_back(CDNSSeedData("123.56.228.200", "123.56.228.200"));
         base58Prefixes[PUBKEY_ADDRESS] = list_of(43);
@@ -161,7 +161,7 @@ public:
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nBits  = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce = 0;
+        genesis.nNonce = 35809;
 //uncomment to log genesis block info
           
           if (true && genesis.GetHash() != hashGenesisBlock)
@@ -196,7 +196,7 @@ public:
 
           
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x"));
+        assert(hashGenesisBlock == uint256("0x0000c8cc3ad53daf85ff976e9030c5afdfdb058189323ef2f8cf7665187586df"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
