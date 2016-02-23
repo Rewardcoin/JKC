@@ -1,0 +1,5 @@
+jiagucoin-qt usr/bin
+share/pixmaps/bitcoin32.xpm usr/share/pixmaps
+share/pixmaps/bitcoin80.xpm usr/share/pixmaps
+debian/jiagucoin-qt.desktop usr/share/applications
+debian/jiagucoin-qt.protocol usr/share/kde4/services/
