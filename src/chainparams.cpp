@@ -228,7 +228,7 @@ public:
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 1);
         genesis.nTime = 1456151369;
         genesis.nBits  = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce = 0;
+        genesis.nNonce = 2;
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 18444;
         strDataDir = "regtest";
@@ -265,7 +265,7 @@ public:
                          }
 
     
-        assert(hashGenesisBlock == uint256("0x"));
+        assert(hashGenesisBlock == uint256("0x1dc03169e822b16e161d4b892327526afb139b033c90cf0e36a52720f6142b7d"));
 
         vSeeds.clear();  // Regtest mode doesn't have any DNS seeds.
     }
