@@ -55,9 +55,9 @@ static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20
 
 static const int64_t COIN_YEAR_REWARD = 0 * CENT; //0% per year
 
-inline bool IsProtocolV1RetargetingFixed(int nHeight) { return TestNet() || nHeight > 10; } 
-inline bool IsProtocolV2(int nHeight) { return TestNet() || nHeight > 0; } 
-inline bool IsNewStakeReward(int64_t nTime) { return TestNet() || nTime > 1456151369; } 
+inline bool IsProtocolV1RetargetingFixed(int nHeight) { return TestNet() || nHeight > 0; } 
+inline bool IsProtocolV2(int nHeight) { return TestNet() || nHeight > 5000; } 
+inline bool IsNewStakeReward(int64_t nTime) { return TestNet() || nTime > 1456329600; } 
 
 inline int64_t PastDrift(int64_t nTime, int nHeight)   { return IsProtocolV2(nHeight) ? nTime      : nTime - 10 * 60; }
 
